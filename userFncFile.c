@@ -17,12 +17,17 @@
 /* User Variables */
 uint16_t nivel = 1234;
 float caudal = -12.5;
+uint16_t f_space = 42;
+uint16_t f_zero = 42;
+int16_t f_sint = -42;
+uint16_t f_cero = 0;
+uint16_t f_ovf = 1234;
 
 void onReset()
 {
     Graphics_OLED_clear();
-    Graphics_OLED_bindFncAt(20, 24, 1, Edit_Edit1_editableVar, &nivel, 1, "####");
-    Edit_Edit1_begin(&nivel, 1, "####");
+    Graphics_OLED_bindFncAt(20, 24, 1, Edit_Edit1_editableVar, &caudal, 6, "-###,##");
+    Edit_Edit1_begin(&caudal, 6, "-###,##");
 }
 
 
