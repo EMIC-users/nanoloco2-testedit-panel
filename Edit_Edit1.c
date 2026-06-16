@@ -172,8 +172,11 @@ void Edit_Edit1_begin(void* var, uint8_t type, char* mask)
     }
     ed_mask[ed_len] = 0;
     ed_formatValue(var, type, ed_mask, ed_buf);
-    for (i = 0; i < ed_len; i++)      /* on entering edit, spaces -> zeros on digit slots */
-        if (ed_posKind(ed_mask[i]) == 1 && ed_buf[i] == ' ') ed_buf[i] = '0';
+    for (i = 0; i < ed_len; i++)      /* on entering edit: digit space -> '0'; positive sign space -> '+' */
+    {
+        if      (ed_posKind(ed_mask[i]) == 1 && ed_buf[i] == ' ') ed_buf[i] = '0';
+        else if (ed_posKind(ed_mask[i]) == 2 && ed_buf[i] == ' ') ed_buf[i] = '+';
+    }
     ed_cursor = ed_firstEditable();
 }
 
@@ -194,7 +197,7 @@ void Edit_Edit1_accept(void)
     {
         char c = ed_buf[i];
         if (c == ',') c = '.';
-        if (c == ' ') continue;
+        if (c == ' ' || c == '+') continue;   /* descarta relleno y el signo positivo */
         ed_view[j++] = c;
     }
     ed_view[j] = 0;
@@ -218,6 +221,10 @@ void Edit_Edit1_accept(void)
     ed_activeVar = 0;                 /* close edit */
 }
 
+void Edit_Edit1_cancel(void)
+{
+    ed_activeVar = 0;                 /* discard, keep previous value */
+}
 
 /*==================[navigation / editing]===================================*/
 
@@ -244,7 +251,7 @@ void Edit_Edit1_incDigit(void)
     }
     else if (ed_posKind(m) == 2)
     {
-        ed_buf[ed_cursor] = (ed_buf[ed_cursor] == '-') ? ((m == '+') ? '+' : ' ') : '-';
+        ed_buf[ed_cursor] = (ed_buf[ed_cursor] == '-') ? '+' : '-';   /* en edicion el signo alterna -/+ */
     }
 }
 
@@ -261,7 +268,7 @@ void Edit_Edit1_decDigit(void)
     }
     else if (ed_posKind(m) == 2)
     {
-        ed_buf[ed_cursor] = (ed_buf[ed_cursor] == '-') ? ((m == '+') ? '+' : ' ') : '-';
+        ed_buf[ed_cursor] = (ed_buf[ed_cursor] == '-') ? '+' : '-';   /* en edicion el signo alterna -/+ */
     }
 }
 
@@ -276,7 +283,7 @@ void Edit_Edit1_changeCharacter(char c)
     }
     else if (ed_posKind(m) == 2)
     {
-        if (c == '-' || c == '+' || c == ' ') { ed_buf[ed_cursor] = c; ed_cursor = ed_moveNext(ed_cursor); }
+        if (c == '-' || c == '+' || c == ' ') { ed_buf[ed_cursor] = (c == '-') ? '-' : '+'; ed_cursor = ed_moveNext(ed_cursor); }
     }
 }
 

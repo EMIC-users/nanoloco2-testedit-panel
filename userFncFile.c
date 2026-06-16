@@ -35,6 +35,7 @@ void Keyboard_Pad_onPress(uint8_t key)
 {
     if (key == 13)
     {
+        Edit_Edit1_cancel();
         Edit_Edit1_accept();
     }
     else

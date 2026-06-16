@@ -32,6 +32,7 @@ void Edit_Edit1_begin(void* var, uint8_t type, char* mask);
 
 void Edit_Edit1_accept(void);
 
+void Edit_Edit1_cancel(void);
 
 void Edit_Edit1_nextDigit(void);
 
