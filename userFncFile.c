@@ -33,7 +33,7 @@ void Keyboard_Pad_onPress(char key)
     }
     else
     {
-        Edit_Edit1_changeCharacter();
+        Edit_Edit1_changeCharacter(key);
     }
 }
 

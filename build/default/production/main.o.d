@@ -1,65 +1,48 @@
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel\build\default\production\main.o: \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/main.c \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/systemConfig.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/systemTimer.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/led_Led1.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/led_Led2.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/timer_api1.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/conversionFunctions.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Graphics_OLED.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/SSD1322_OLED.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/gpio.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pins.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pmp.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Edit_Edit1.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Keyboard_Pad.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/keyCodes.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Keyboard_Nav.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/EMICBus.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/system.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/userFncFile.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamIn.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/system.c
+build/default/production/main.o: main.c inc/systemConfig.h \
+ inc/systemTimer.h inc/led_Led1.h inc/led_Led2.h inc/timer_api1.h \
+ inc/conversionFunctions.h inc/Graphics_OLED.h inc/SSD1322_OLED.h \
+ inc/gpio.h inc/pins.h inc/pmp.h inc/streamOut.h inc/Edit_Edit1.h \
+ inc/Keyboard_Pad.h inc/keyCodes.h inc/Keyboard_Nav.h inc/EMICBus.h \
+ inc/system.h inc/userFncFile.h inc/streamIn.h system.c
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/systemConfig.h:
+inc/systemConfig.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/systemTimer.h:
+inc/systemTimer.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/led_Led1.h:
+inc/led_Led1.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/led_Led2.h:
+inc/led_Led2.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/timer_api1.h:
+inc/timer_api1.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/conversionFunctions.h:
+inc/conversionFunctions.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Graphics_OLED.h:
+inc/Graphics_OLED.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/SSD1322_OLED.h:
+inc/SSD1322_OLED.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/gpio.h:
+inc/gpio.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pins.h:
+inc/pins.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pmp.h:
+inc/pmp.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h:
+inc/streamOut.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Edit_Edit1.h:
+inc/Edit_Edit1.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Keyboard_Pad.h:
+inc/Keyboard_Pad.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/keyCodes.h:
+inc/keyCodes.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Keyboard_Nav.h:
+inc/Keyboard_Nav.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/EMICBus.h:
+inc/EMICBus.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/system.h:
+inc/system.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/userFncFile.h:
+inc/userFncFile.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamIn.h:
+inc/streamIn.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/system.c:
+system.c:

@@ -1,17 +1,12 @@
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel\build\default\production\SSD1322_OLED.o: \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/SSD1322_OLED.c \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/SSD1322_OLED.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/gpio.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pins.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pmp.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/system.h
+build/default/production/SSD1322_OLED.o: SSD1322_OLED.c \
+ inc/SSD1322_OLED.h inc/gpio.h inc/pins.h inc/pmp.h inc/system.h
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/SSD1322_OLED.h:
+inc/SSD1322_OLED.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/gpio.h:
+inc/gpio.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pins.h:
+inc/pins.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/pmp.h:
+inc/pmp.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/system.h:
+inc/system.h:
