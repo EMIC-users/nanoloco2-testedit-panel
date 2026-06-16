@@ -1,10 +1,14 @@
-build/default/production/Edit_Edit1.o: Edit_Edit1.c inc/Edit_Edit1.h \
- inc/systemTimer.h inc/streamIn.h inc/streamOut.h
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel\build\default\production\Edit_Edit1.o: \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/Edit_Edit1.c \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Edit_Edit1.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/systemTimer.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamIn.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h
 
-inc/Edit_Edit1.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/Edit_Edit1.h:
 
-inc/systemTimer.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/systemTimer.h:
 
-inc/streamIn.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamIn.h:
 
-inc/streamOut.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h:

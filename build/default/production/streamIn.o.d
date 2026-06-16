@@ -1,10 +1,14 @@
-build/default/production/streamIn.o: streamIn.c inc/streamIn.h \
- inc/streamOut.h inc/streamOut.h inc/conversionFunctions.h
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel\build\default\production\streamIn.o: \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/streamIn.c \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamIn.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/conversionFunctions.h
 
-inc/streamIn.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamIn.h:
 
-inc/streamOut.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h:
 
-inc/streamOut.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/streamOut.h:
 
-inc/conversionFunctions.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestEdit/Panel/inc/conversionFunctions.h:

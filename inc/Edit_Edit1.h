@@ -33,9 +33,13 @@ void Edit_Edit1_begin(void* var, uint8_t type, char* mask);
 void Edit_Edit1_accept(void);
 
 
+void Edit_Edit1_nextDigit(void);
 
+void Edit_Edit1_prevDigit(void);
 
+void Edit_Edit1_incDigit(void);
 
+void Edit_Edit1_decDigit(void);
 
 void Edit_Edit1_changeCharacter(char c);
 

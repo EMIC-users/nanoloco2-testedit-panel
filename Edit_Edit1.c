@@ -221,9 +221,49 @@ void Edit_Edit1_accept(void)
 
 /*==================[navigation / editing]===================================*/
 
+void Edit_Edit1_nextDigit(void)
+{
+    if (ed_activeVar) ed_cursor = ed_moveNext(ed_cursor);
+}
 
+void Edit_Edit1_prevDigit(void)
+{
+    if (ed_activeVar) ed_cursor = ed_movePrev(ed_cursor);
+}
 
+void Edit_Edit1_incDigit(void)
+{
+    char m, d;
+    if (ed_activeVar == 0) return;
+    m = ed_mask[ed_cursor];
+    if (ed_posKind(m) == 1)
+    {
+        d = ed_buf[ed_cursor];
+        if (d < '0' || d > '9') d = '0';
+        ed_buf[ed_cursor] = (d == '9') ? '0' : (char)(d + 1);   /* wrap local */
+    }
+    else if (ed_posKind(m) == 2)
+    {
+        ed_buf[ed_cursor] = (ed_buf[ed_cursor] == '-') ? ((m == '+') ? '+' : ' ') : '-';
+    }
+}
 
+void Edit_Edit1_decDigit(void)
+{
+    char m, d;
+    if (ed_activeVar == 0) return;
+    m = ed_mask[ed_cursor];
+    if (ed_posKind(m) == 1)
+    {
+        d = ed_buf[ed_cursor];
+        if (d < '0' || d > '9') d = '0';
+        ed_buf[ed_cursor] = (d == '0') ? '9' : (char)(d - 1);   /* wrap local */
+    }
+    else if (ed_posKind(m) == 2)
+    {
+        ed_buf[ed_cursor] = (ed_buf[ed_cursor] == '-') ? ((m == '+') ? '+' : ' ') : '-';
+    }
+}
 
 void Edit_Edit1_changeCharacter(char c)
 {

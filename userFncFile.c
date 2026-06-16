@@ -16,6 +16,7 @@
 
 /* User Variables */
 uint16_t nivel = 1234;
+float caudal = -12.5;
 
 void onReset()
 {
@@ -25,7 +26,7 @@ void onReset()
 }
 
 
-void Keyboard_Pad_onPress(char key)
+void Keyboard_Pad_onPress(uint8_t key)
 {
     if (key == 13)
     {
@@ -33,7 +34,27 @@ void Keyboard_Pad_onPress(char key)
     }
     else
     {
-        Edit_Edit1_changeCharacter(key);
+        Edit_Edit1_changeCharacter((char)(key));
+    }
+}
+
+
+void Keyboard_Nav_onPress(uint8_t key)
+{
+    switch (key)
+    {
+        case 128:
+            Edit_Edit1_incDigit();
+            break;
+        case 129:
+            Edit_Edit1_decDigit();
+            break;
+        case 131:
+            Edit_Edit1_nextDigit();
+            break;
+        case 130:
+            Edit_Edit1_prevDigit();
+            break;
     }
 }
 
